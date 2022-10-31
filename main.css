@@ -1,0 +1,104 @@
+* {
+  font-family: "Helvetica Neue", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  /* background-color: #d9526b; */
+  /* padding: 2px; */
+  line-height: 0;
+}
+
+.multi-column {
+  columns: 2;
+}
+
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+  overflow: scroll;
+  background-color: #d9526b;
+}
+
+.box-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: #ffffff;
+  /* gap: 10px 20px;
+    column-gap: 50px; */
+  /* justify-content: space-around; */
+  /* text-align: center; (puts the text centered bluech x.x)*/
+}
+
+header {
+  font-size: 100px;
+  color: #d9526b;
+  text-align: center;
+}
+
+.responsive {
+  width: 99%;
+  height: auto;
+  float: center;
+  padding: 1px;
+}
+
+/* it dont exist lol */
+#box1 {
+  padding: 10px;
+  /* border: solid 1px green; */
+}
+
+#box2 {
+  flex-grow: 1;
+  /* border: solid 1px orange; */
+  border-radius: 5px;
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+  /* align-self: start; */
+}
+
+#box3 {
+  flex-grow: 1;
+  /* border: solid 1px orange; */
+  border-radius: 5px;
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+}
+
+#box4 {
+  flex-grow: 1;
+  /* border: solid 1px orange; */
+  border-radius: 5px;
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+  /* align-self: flex-start; */
+}
+
+#box5 {
+  padding: 1px;
+  border: dotted 3px #000000;
+  border-radius: 5px;
+}
+
+#box6 {
+  flex-grow: 1;
+  /* border: solid 1px rgb(0, 255, 153); */
+  border-radius: 5px;
+  width: 45%;
+  float: right;
+  /* align-self: flex-end; */
+}
