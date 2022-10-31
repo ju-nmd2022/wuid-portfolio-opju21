@@ -35,14 +35,12 @@ body {
   border-radius: 5px;
   border: #ffffff;
   /* gap: 10px 20px;
-    column-gap: 50px; */
+      column-gap: 50px; */
   /* justify-content: space-around; */
   /* text-align: center; (puts the text centered bluech x.x)*/
 }
 
 header {
-  font-size: 100px;
-  color: #d9526b;
   text-align: center;
 }
 
@@ -105,15 +103,14 @@ header {
 
 a:link,
 a:visited {
-  background-color: #d9526b;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
+  font-size: 100px;
   text-decoration: none;
   display: inline-block;
+  color: #d9526b;
+  text-align: center;
 }
 
 a:hover,
 a:active {
-  background-color: #632631;
+  color: #632631;
 }
