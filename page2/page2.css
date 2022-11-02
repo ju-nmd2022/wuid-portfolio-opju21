@@ -2,115 +2,128 @@
   font-family: "Helvetica Neue", Calibri, "Trebuchet MS", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #000000;
-  /* background-color: #d9526b; */
-  /* padding: 2px; */
-  line-height: 0;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 120px 1fr 1fr 1fr;
+
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* this is the header */
+.item {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+
+  grid-column-start: 1; /* name, span <number>, span <name>, auto */
+  grid-column-end: 5; /* name, span <number>, span <name>, auto */
+  grid-row-start: 1; /* name, span <number>, span <name>, auto */
+  grid-row-end: 2; /* name, span <number>, span <name>, auto */
+}
+/*This is the About me section*/
+.item1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  grid-column-start: 1; /* name, span <number>, span <name>, auto */
+  grid-column-end: 3; /* name, span <number>, span <name>, auto */
+  grid-row-start: 2; /* name, span <number>, span <name>, auto */
+  grid-row-end: 3; /* name, span <number>, span <name>, auto */
+}
+/* This is "why the nmd"*/
+.item2 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  grid-column-start: 1; /* name, span <number>, span <name>, auto */
+  grid-column-end: 3; /* name, span <number>, span <name>, auto */
+  grid-row-start: 3; /* name, span <number>, span <name>, auto */
+  grid-row-end: 4; /* name, span <number>, span <name>, auto */
+}
+/*Hobbies*/
+.item3 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  grid-column-start: 1; /* name, span <number>, span <name>, auto */
+  grid-column-end: 2; /* name, span <number>, span <name>, auto */
+  grid-row-start: 4; /* name, span <number>, span <name>, auto */
+  grid-row-end: 5; /* name, span <number>, span <name>, auto */
+}
+/* LINK */
+.item4 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: center;
+  grid-column-start: 2; /* name, span <number>, span <name>, auto */
+  grid-column-end: 3; /* name, span <number>, span <name>, auto */
+  grid-row-start: 4; /* name, span <number>, span <name>, auto */
+  grid-row-end: 5; /* name, span <number>, span <name>, auto */
 }
 
-.multi-column {
-  columns: 2;
+.image {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  grid-column-start: 3; /* name, span <number>, span <name>, auto */
+  grid-column-end: 5; /* name, span <number>, span <name>, auto */
+  grid-row-start: 2; /* name, span <number>, span <name>, auto */
+  grid-row-end: 5; /* name, span <number>, span <name>, auto */
 }
 
 body {
-  margin-left: 10%;
-  margin-right: 10%;
-  justify-content: center;
-  overflow: scroll;
   background-color: #d9526b;
 }
 
-.box-wrapper {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  border-radius: 5px;
-  border: #ffffff;
-  /* gap: 10px 20px;
-      column-gap: 50px; */
-  /* justify-content: space-around; */
-  /* text-align: center; (puts the text centered bluech x.x)*/
-}
-
 header {
-  text-align: center;
-}
-
-.responsive {
-  width: 99%;
-  height: auto;
-  float: center;
-  padding: 1px;
-}
-
-/* it dont exist lol */
-#box1 {
-  padding: 10px;
-  /* border: solid 1px green; */
-}
-
-#box2 {
-  flex-grow: 1;
-  /* border: solid 1px orange; */
-  border-radius: 5px;
-  width: 50%;
-  float: right;
-  padding-right: 20px;
-  /* align-self: start; */
-}
-
-#box3 {
-  flex-grow: 1;
-  /* border: solid 1px orange; */
-  border-radius: 5px;
-  width: 50%;
-  float: right;
-  padding-right: 20px;
-}
-
-#box4 {
-  flex-grow: 1;
-  /* border: solid 1px orange; */
-  border-radius: 5px;
-  width: 50%;
-  float: right;
-  padding-right: 20px;
-  /* align-self: flex-start; */
-}
-
-#box5 {
-  padding: 1px;
-  border: dotted 3px #000000;
-  border-radius: 5px;
-}
-
-#box6 {
-  flex-grow: 1;
-  /* border: solid 1px rgb(0, 255, 153); */
-  border-radius: 5px;
-  width: 45%;
-  float: left;
-  /* align-self: flex-end; */
-}
-
-a:link,
-a:visited {
-  font-size: 100px;
-  text-decoration: none;
-  display: inline-block;
+  font-size: 110px;
   color: #d9526b;
   text-align: center;
 }
 
+p {
+  padding-left: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding-left: 10px;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #d9526b; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 10px; /* Also needed for space (tweak if needed) */
+  margin-left: -30px; /* Also needed for space (tweak if needed) */
+}
+
+.responsive {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  float: center;
+}
+
+a:link,
+a:visited {
+  background-color: #d9526b;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+}
 a:hover,
 a:active {
-  color: #632631;
+  background-color: #632631;
 }
