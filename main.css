@@ -6,11 +6,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 120px 1fr 1fr 1fr;
-
+  background-color: #ffffff;
+  border-radius: 15px;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px;
 }
 /* this is the header */
 .item {
@@ -24,8 +24,8 @@
 }
 /*This is the About me section*/
 .item1 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 15px;
+  /* border: solid 1px rgb(0, 0, 0);
+  border-radius: 15px; */
   grid-column-start: 1; /* name, span <number>, span <name>, auto */
   grid-column-end: 3; /* name, span <number>, span <name>, auto */
   grid-row-start: 2; /* name, span <number>, span <name>, auto */
@@ -33,8 +33,8 @@
 }
 /* This is "why the nmd"*/
 .item2 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 15px;
+  /* border: solid 1px rgb(0, 0, 0);
+  border-radius: 15px; */
   grid-column-start: 1; /* name, span <number>, span <name>, auto */
   grid-column-end: 3; /* name, span <number>, span <name>, auto */
   grid-row-start: 3; /* name, span <number>, span <name>, auto */
@@ -42,8 +42,8 @@
 }
 /*Hobbies*/
 .item3 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 15px;
+  /* border: solid 1px rgb(0, 0, 0);
+  border-radius: 15px; */
   grid-column-start: 1; /* name, span <number>, span <name>, auto */
   grid-column-end: 2; /* name, span <number>, span <name>, auto */
   grid-row-start: 4; /* name, span <number>, span <name>, auto */
@@ -51,8 +51,8 @@
 }
 /* LINK */
 .item4 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 15px;
+  /* border: solid 1px rgb(0, 0, 0);
+  border-radius: 15px; */
   padding-left: 10px;
   padding-right: 10px;
   justify-content: center;
@@ -71,8 +71,16 @@
   grid-row-end: 5; /* name, span <number>, span <name>, auto */
 }
 
+#bdr {
+  border: solid 2px #000000;
+  border-radius: 15px;
+}
+
 body {
   background-color: #d9526b;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
 }
 
 header {
