@@ -11,6 +11,7 @@
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   padding: 10px;
+  max-width: 40cm;
 }
 /* this is the header */
 .item {
