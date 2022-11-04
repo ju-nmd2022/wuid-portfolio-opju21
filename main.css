@@ -5,7 +5,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 120px 1fr 1fr 1fr;
+  grid-template-rows: 120px 50px 1fr 1fr 1fr;
   background-color: #ffffff;
   border-radius: 15px;
   grid-column-gap: 5px;
@@ -23,17 +23,16 @@
   grid-row-start: 1; /* name, span <number>, span <name>, auto */
   grid-row-end: 2; /* name, span <number>, span <name>, auto */
 }
-/*This is the About me section*/
-.item1 {
-  /* border: solid 1px rgb(0, 0, 0);
-  border-radius: 15px; */
+
+.menu {
+  justify-self: center;
   grid-column-start: 1; /* name, span <number>, span <name>, auto */
-  grid-column-end: 3; /* name, span <number>, span <name>, auto */
+  grid-column-end: 5; /* name, span <number>, span <name>, auto */
   grid-row-start: 2; /* name, span <number>, span <name>, auto */
   grid-row-end: 3; /* name, span <number>, span <name>, auto */
 }
-/* This is "why the nmd"*/
-.item2 {
+/*This is the About me section*/
+.item1 {
   /* border: solid 1px rgb(0, 0, 0);
   border-radius: 15px; */
   grid-column-start: 1; /* name, span <number>, span <name>, auto */
@@ -41,14 +40,23 @@
   grid-row-start: 3; /* name, span <number>, span <name>, auto */
   grid-row-end: 4; /* name, span <number>, span <name>, auto */
 }
+/* This is "why the nmd"*/
+.item2 {
+  /* border: solid 1px rgb(0, 0, 0);
+  border-radius: 15px; */
+  grid-column-start: 1; /* name, span <number>, span <name>, auto */
+  grid-column-end: 3; /* name, span <number>, span <name>, auto */
+  grid-row-start: 4; /* name, span <number>, span <name>, auto */
+  grid-row-end: 5; /* name, span <number>, span <name>, auto */
+}
 /*Hobbies*/
 .item3 {
   /* border: solid 1px rgb(0, 0, 0);
   border-radius: 15px; */
   grid-column-start: 1; /* name, span <number>, span <name>, auto */
   grid-column-end: 2; /* name, span <number>, span <name>, auto */
-  grid-row-start: 4; /* name, span <number>, span <name>, auto */
-  grid-row-end: 5; /* name, span <number>, span <name>, auto */
+  grid-row-start: 5; /* name, span <number>, span <name>, auto */
+  grid-row-end: 6; /* name, span <number>, span <name>, auto */
 }
 /* LINK */
 .item4 {
@@ -59,7 +67,7 @@
   justify-content: center;
   grid-column-start: 2; /* name, span <number>, span <name>, auto */
   grid-column-end: 3; /* name, span <number>, span <name>, auto */
-  grid-row-start: 4; /* name, span <number>, span <name>, auto */
+  grid-row-start: 5; /* name, span <number>, span <name>, auto */
   grid-row-end: 5; /* name, span <number>, span <name>, auto */
 }
 
@@ -68,8 +76,8 @@
   border-radius: 15px;
   grid-column-start: 3; /* name, span <number>, span <name>, auto */
   grid-column-end: 5; /* name, span <number>, span <name>, auto */
-  grid-row-start: 2; /* name, span <number>, span <name>, auto */
-  grid-row-end: 5; /* name, span <number>, span <name>, auto */
+  grid-row-start: 3; /* name, span <number>, span <name>, auto */
+  grid-row-end: 6; /* name, span <number>, span <name>, auto */
 }
 
 #bdr {
