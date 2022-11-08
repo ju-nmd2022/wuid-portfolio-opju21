@@ -55,8 +55,8 @@
   border-radius: 15px; */
   grid-column-start: 1; /* name, span <number>, span <name>, auto */
   grid-column-end: 2; /* name, span <number>, span <name>, auto */
-  grid-row-start: 5; /* name, span <number>, span <name>, auto */
-  grid-row-end: 6; /* name, span <number>, span <name>, auto */
+  grid-row-start: 4; /* name, span <number>, span <name>, auto */
+  grid-row-end: 5; /* name, span <number>, span <name>, auto */
 }
 /* LINK */
 .item4 {
@@ -67,7 +67,7 @@
   justify-content: center;
   grid-column-start: 2; /* name, span <number>, span <name>, auto */
   grid-column-end: 3; /* name, span <number>, span <name>, auto */
-  grid-row-start: 5; /* name, span <number>, span <name>, auto */
+  grid-row-start: 4; /* name, span <number>, span <name>, auto */
   grid-row-end: 5; /* name, span <number>, span <name>, auto */
 }
 
