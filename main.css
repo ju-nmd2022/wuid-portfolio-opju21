@@ -144,3 +144,43 @@ a:hover,
 a:active {
   background-color: #632631;
 }
+
+@media screen and (min-width: 400px) and (max-width: 1000px) {
+  header {
+    font-size: 60px;
+    color: #d9526b;
+    text-align: center;
+  }
+  .item1 {
+    /* border: solid 1px rgb(0, 0, 0);
+    border-radius: 15px; */
+    grid-column-start: 1; /* name, span <number>, span <name>, auto */
+    grid-column-end: 5; /* name, span <number>, span <name>, auto */
+    grid-row-start: 3; /* name, span <number>, span <name>, auto */
+    grid-row-end: 4; /* name, span <number>, span <name>, auto */
+  }
+  .image {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    grid-column-start: 2; /* name, span <number>, span <name>, auto */
+    grid-column-end: 4; /* name, span <number>, span <name>, auto */
+    grid-row-start: 4; /* name, span <number>, span <name>, auto */
+    grid-row-end: 5; /* name, span <number>, span <name>, auto */
+  }
+  .item2 {
+    /* border: solid 1px rgb(0, 0, 0);
+    border-radius: 15px; */
+    grid-column-start: 1; /* name, span <number>, span <name>, auto */
+    grid-column-end: 5; /* name, span <number>, span <name>, auto */
+    grid-row-start: 5; /* name, span <number>, span <name>, auto */
+    grid-row-end: 6; /* name, span <number>, span <name>, auto */
+  }
+  .item3 {
+    /* border: solid 1px rgb(0, 0, 0);
+    border-radius: 15px; */
+    grid-column-start: 2; /* name, span <number>, span <name>, auto */
+    grid-column-end: 4; /* name, span <number>, span <name>, auto */
+    grid-row-start: 6; /* name, span <number>, span <name>, auto */
+    grid-row-end: 7; /* name, span <number>, span <name>, auto */
+  }
+}
