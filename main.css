@@ -36,7 +36,7 @@
   /* border: solid 1px rgb(0, 0, 0);
   border-radius: 15px; */
   grid-column-start: 1; /* name, span <number>, span <name>, auto */
-  grid-column-end: 3; /* name, span <number>, span <name>, auto */
+  grid-column-end: 2; /* name, span <number>, span <name>, auto */
   grid-row-start: 3; /* name, span <number>, span <name>, auto */
   grid-row-end: 4; /* name, span <number>, span <name>, auto */
 }
@@ -44,10 +44,10 @@
 .item2 {
   /* border: solid 1px rgb(0, 0, 0);
   border-radius: 15px; */
-  grid-column-start: 1; /* name, span <number>, span <name>, auto */
+  grid-column-start: 2; /* name, span <number>, span <name>, auto */
   grid-column-end: 3; /* name, span <number>, span <name>, auto */
-  grid-row-start: 4; /* name, span <number>, span <name>, auto */
-  grid-row-end: 5; /* name, span <number>, span <name>, auto */
+  grid-row-start: 3; /* name, span <number>, span <name>, auto */
+  grid-row-end: 4; /* name, span <number>, span <name>, auto */
 }
 /*Hobbies*/
 .item3 {
