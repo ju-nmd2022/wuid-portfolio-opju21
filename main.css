@@ -81,8 +81,8 @@
 }
 
 #bdr {
-  border: solid 2px #000000;
-  border-radius: 15px;
+  border: none;
+  border-radius: none;
 }
 
 body {
@@ -178,7 +178,7 @@ a:active {
   .item3 {
     /* border: solid 1px rgb(0, 0, 0);
     border-radius: 15px; */
-    grid-column-start: 2; /* name, span <number>, span <name>, auto */
+    grid-column-start: 1; /* name, span <number>, span <name>, auto */
     grid-column-end: 5; /* name, span <number>, span <name>, auto */
     grid-row-start: 6; /* name, span <number>, span <name>, auto */
     grid-row-end: 7; /* name, span <number>, span <name>, auto */
