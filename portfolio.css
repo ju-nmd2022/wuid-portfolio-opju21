@@ -31,39 +31,42 @@
   grid-row-start: 2; /* name, span <number>, span <name>, auto */
   grid-row-end: 3; /* name, span <number>, span <name>, auto */
 }
-/*This is the what to do here section*/
+/*Myportfolio*/
 .item1 {
   /* border: solid 1px rgb(0, 0, 0);
     border-radius: 15px; */
   grid-column-start: 1; /* name, span <number>, span <name>, auto */
-  grid-column-end: 2; /* name, span <number>, span <name>, auto */
-  grid-row-start: 4; /* name, span <number>, span <name>, auto */
-  grid-row-end: 5; /* name, span <number>, span <name>, auto */
+  grid-column-end: 3; /* name, span <number>, span <name>, auto */
+  grid-row-start: 3; /* name, span <number>, span <name>, auto */
+  grid-row-end: 4; /* name, span <number>, span <name>, auto */
 }
-/* This is "placestogoout"*/
+/* This is big image*/
 .item2 {
   /* border: solid 1px rgb(0, 0, 0);
     border-radius: 15px; */
-  grid-column-start: 2; /* name, span <number>, span <name>, auto */
+  grid-column-start: 1; /* name, span <number>, span <name>, auto */
   grid-column-end: 3; /* name, span <number>, span <name>, auto */
   grid-row-start: 4; /* name, span <number>, span <name>, auto */
-  grid-row-end: 5; /* name, span <number>, span <name>, auto */
+  grid-row-end: 6; /* name, span <number>, span <name>, auto */
 }
-/*food places*/
+/*another header kinda*/
 .item3 {
   /* border: solid 1px rgb(0, 0, 0);
     border-radius: 15px; */
   grid-column-start: 3; /* name, span <number>, span <name>, auto */
-  grid-column-end: 4; /* name, span <number>, span <name>, auto */
-  grid-row-start: 4; /* name, span <number>, span <name>, auto */
-  grid-row-end: 5; /* name, span <number>, span <name>, auto */
-}
-/* my jonkoping */
-.item4 {
-  grid-column-start: 1; /* name, span <number>, span <name>, auto */
   grid-column-end: 5; /* name, span <number>, span <name>, auto */
   grid-row-start: 3; /* name, span <number>, span <name>, auto */
   grid-row-end: 4; /* name, span <number>, span <name>, auto */
+}
+/* lil imgae 1 */
+.item4 {
+  /* border: solid 1px rgb(0, 0, 0);
+    border-radius: 15px; */
+
+  grid-column-start: 3; /* name, span <number>, span <name>, auto */
+  grid-column-end: 4; /* name, span <number>, span <name>, auto */
+  grid-row-start: 4; /* name, span <number>, span <name>, auto */
+  grid-row-end: 5; /* name, span <number>, span <name>, auto */
 }
 
 .image {
@@ -74,10 +77,27 @@
   grid-row-start: 4; /* name, span <number>, span <name>, auto */
   grid-row-end: 5; /* name, span <number>, span <name>, auto */
 }
+.image2 {
+  /* border: solid 1px rgb(0, 0, 0);
+      border-radius: 15px; */
+
+  grid-column-start: 3; /* name, span <number>, span <name>, auto */
+  grid-column-end: 4; /* name, span <number>, span <name>, auto */
+  grid-row-start: 5; /* name, span <number>, span <name>, auto */
+  grid-row-end: 6; /* name, span <number>, span <name>, auto */
+}
+.image3 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  grid-column-start: 4; /* name, span <number>, span <name>, auto */
+  grid-column-end: 5; /* name, span <number>, span <name>, auto */
+  grid-row-start: 5; /* name, span <number>, span <name>, auto */
+  grid-row-end: 6; /* name, span <number>, span <name>, auto */
+}
 
 #bdr {
   border: solid 1px #632631;
-  border-radius: 15px;
+  border-radius: none;
 }
 
 body {
@@ -106,13 +126,7 @@ h4 {
   font-size: 30px;
   line-height: 0.8;
 }
-h5 {
-  text-align: center;
-  /* display: inline-block; */
-  line-height: 0.8;
-  font-size: 50px;
-  letter-spacing: 3px;
-}
+
 ul {
   list-style: none; /* Remove default bullets */
 }
@@ -122,11 +136,11 @@ ul li::before {
   color: #d9526b; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 10px; /* Also needed for space (tweak if needed) */
+  width: 20px; /* Also needed for space (tweak if needed) */
   margin-left: -30px; /* Also needed for space (tweak if needed) */
 }
 
-#responsive {
+.responsive {
   border-radius: 15px;
   width: 100%;
   height: auto;
@@ -165,54 +179,47 @@ a:active {
     color: #d9526b;
     text-align: center;
   }
-  h5 {
-    text-align: center;
-    /* display: inline-block; */
-    line-height: 0.8;
-    font-size: 40px;
-    letter-spacing: 3px;
-  }
   .item1 {
     /* border: solid 1px rgb(0, 0, 0);
-    border-radius: 15px; */
+      border-radius: 15px; */
     grid-column-start: 1; /* name, span <number>, span <name>, auto */
     grid-column-end: 5; /* name, span <number>, span <name>, auto */
-    grid-row-start: 4; /* name, span <number>, span <name>, auto */
-    grid-row-end: 5; /* name, span <number>, span <name>, auto */
+    grid-row-start: 3; /* name, span <number>, span <name>, auto */
+    grid-row-end: 4; /* name, span <number>, span <name>, auto */
   }
   .image {
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     grid-column-start: 1; /* name, span <number>, span <name>, auto */
     grid-column-end: 5; /* name, span <number>, span <name>, auto */
-    grid-row-start: 5; /* name, span <number>, span <name>, auto */
-    grid-row-end: 6; /* name, span <number>, span <name>, auto */
+    grid-row-start: 4; /* name, span <number>, span <name>, auto */
+    grid-row-end: 5; /* name, span <number>, span <name>, auto */
   }
   .item2 {
     /* border: solid 1px rgb(0, 0, 0);
-    border-radius: 15px; */
+      border-radius: 15px; */
+    grid-column-start: 1; /* name, span <number>, span <name>, auto */
+    grid-column-end: 5; /* name, span <number>, span <name>, auto */
+    grid-row-start: 5; /* name, span <number>, span <name>, auto */
+    grid-row-end: 6; /* name, span <number>, span <name>, auto */
+  }
+  .item3 {
+    /* border: solid 1px rgb(0, 0, 0);
+      border-radius: 15px; */
     grid-column-start: 1; /* name, span <number>, span <name>, auto */
     grid-column-end: 5; /* name, span <number>, span <name>, auto */
     grid-row-start: 6; /* name, span <number>, span <name>, auto */
     grid-row-end: 7; /* name, span <number>, span <name>, auto */
   }
-  .item3 {
-    /* border: solid 1px rgb(0, 0, 0);
-    border-radius: 15px; */
-    grid-column-start: 1; /* name, span <number>, span <name>, auto */
-    grid-column-end: 5; /* name, span <number>, span <name>, auto */
-    grid-row-start: 7; /* name, span <number>, span <name>, auto */
-    grid-row-end: 8; /* name, span <number>, span <name>, auto */
-  }
   .item4 {
     /* border: solid 1px rgb(0, 0, 0);
-    border-radius: 15px; */
+      border-radius: 15px; */
     padding-left: 10px;
     padding-right: 10px;
     justify-content: center;
     grid-column-start: 1; /* name, span <number>, span <name>, auto */
     grid-column-end: 5; /* name, span <number>, span <name>, auto */
-    grid-row-start: 3; /* name, span <number>, span <name>, auto */
-    grid-row-end: 4; /* name, span <number>, span <name>, auto */
+    grid-row-start: 7; /* name, span <number>, span <name>, auto */
+    grid-row-end: 8; /* name, span <number>, span <name>, auto */
   }
 }

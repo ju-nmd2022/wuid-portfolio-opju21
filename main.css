@@ -121,7 +121,7 @@ ul li::before {
   color: #d9526b; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 10px; /* Also needed for space (tweak if needed) */
+  width: 20px; /* Also needed for space (tweak if needed) */
   margin-left: -30px; /* Also needed for space (tweak if needed) */
 }
 
@@ -148,6 +148,17 @@ a:active {
 }
 
 @media screen and (max-width: 415px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1/2fr 1fr 1fr 1fr 1fr;
+    background-color: #ffffff;
+    border-radius: 15px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    padding: 10px;
+    max-width: 40cm;
+  }
   header {
     font-size: 50px;
     color: #d9526b;
@@ -184,5 +195,16 @@ a:active {
     grid-column-end: 5; /* name, span <number>, span <name>, auto */
     grid-row-start: 6; /* name, span <number>, span <name>, auto */
     grid-row-end: 7; /* name, span <number>, span <name>, auto */
+  }
+  .item4 {
+    /* border: solid 1px rgb(0, 0, 0);
+    border-radius: 15px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    grid-column-start: 1; /* name, span <number>, span <name>, auto */
+    grid-column-end: 5; /* name, span <number>, span <name>, auto */
+    grid-row-start: 7; /* name, span <number>, span <name>, auto */
+    grid-row-end: 8; /* name, span <number>, span <name>, auto */
   }
 }
