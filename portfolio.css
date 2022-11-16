@@ -36,7 +36,7 @@
   /* border: solid 1px rgb(0, 0, 0);
     border-radius: 15px; */
   grid-column-start: 1; /* name, span <number>, span <name>, auto */
-  grid-column-end: 3; /* name, span <number>, span <name>, auto */
+  grid-column-end: 5; /* name, span <number>, span <name>, auto */
   grid-row-start: 3; /* name, span <number>, span <name>, auto */
   grid-row-end: 4; /* name, span <number>, span <name>, auto */
 }
@@ -49,15 +49,7 @@
   grid-row-start: 4; /* name, span <number>, span <name>, auto */
   grid-row-end: 6; /* name, span <number>, span <name>, auto */
 }
-/*another header kinda*/
-.item3 {
-  /* border: solid 1px rgb(0, 0, 0);
-    border-radius: 15px; */
-  grid-column-start: 3; /* name, span <number>, span <name>, auto */
-  grid-column-end: 5; /* name, span <number>, span <name>, auto */
-  grid-row-start: 3; /* name, span <number>, span <name>, auto */
-  grid-row-end: 4; /* name, span <number>, span <name>, auto */
-}
+
 /* lil imgae 1 */
 .item4 {
   /* border: solid 1px rgb(0, 0, 0);
@@ -97,7 +89,7 @@
 
 #bdr {
   border: solid 1px #632631;
-  border-radius: none;
+  border-radius: 15px;
 }
 
 body {
@@ -113,31 +105,14 @@ header {
   text-align: center;
 }
 
-p {
-  padding-left: 10px;
-}
-
 h1,
 h2,
 h3,
 h4 {
-  padding-left: 10px;
-  padding-top: 1px;
-  font-size: 30px;
+  text-align: center;
   line-height: 0.8;
-}
-
-ul {
-  list-style: none; /* Remove default bullets */
-}
-
-ul li::before {
-  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #d9526b; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 20px; /* Also needed for space (tweak if needed) */
-  margin-left: -30px; /* Also needed for space (tweak if needed) */
+  font-size: 50px;
+  letter-spacing: 3px;
 }
 
 .responsive {
@@ -166,7 +141,7 @@ a:active {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1/2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1/2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: #ffffff;
     border-radius: 15px;
     grid-column-gap: 5px;
@@ -203,14 +178,6 @@ a:active {
     grid-row-start: 5; /* name, span <number>, span <name>, auto */
     grid-row-end: 6; /* name, span <number>, span <name>, auto */
   }
-  .item3 {
-    /* border: solid 1px rgb(0, 0, 0);
-      border-radius: 15px; */
-    grid-column-start: 1; /* name, span <number>, span <name>, auto */
-    grid-column-end: 5; /* name, span <number>, span <name>, auto */
-    grid-row-start: 6; /* name, span <number>, span <name>, auto */
-    grid-row-end: 7; /* name, span <number>, span <name>, auto */
-  }
   .item4 {
     /* border: solid 1px rgb(0, 0, 0);
       border-radius: 15px; */
@@ -221,5 +188,22 @@ a:active {
     grid-column-end: 5; /* name, span <number>, span <name>, auto */
     grid-row-start: 7; /* name, span <number>, span <name>, auto */
     grid-row-end: 8; /* name, span <number>, span <name>, auto */
+  }
+  .image2 {
+    /* border: solid 1px rgb(0, 0, 0);
+        border-radius: 15px; */
+
+    grid-column-start: 1; /* name, span <number>, span <name>, auto */
+    grid-column-end: 5; /* name, span <number>, span <name>, auto */
+    grid-row-start: 8; /* name, span <number>, span <name>, auto */
+    grid-row-end: 9; /* name, span <number>, span <name>, auto */
+  }
+  .image3 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    grid-column-start: 1; /* name, span <number>, span <name>, auto */
+    grid-column-end: 5; /* name, span <number>, span <name>, auto */
+    grid-row-start: 9; /* name, span <number>, span <name>, auto */
+    grid-row-end: 10; /* name, span <number>, span <name>, auto */
   }
 }
