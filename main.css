@@ -72,12 +72,29 @@
 }
 
 .image {
-  background-color: rgb(255, 255, 255);
   border-radius: 15px;
   grid-column-start: 2; /* name, span <number>, span <name>, auto */
   grid-column-end: 4; /* name, span <number>, span <name>, auto */
   grid-row-start: 3; /* name, span <number>, span <name>, auto */
   grid-row-end: 5; /* name, span <number>, span <name>, auto */
+  animation-name: dance;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+@keyframes dance {
+  0% {
+    transform: translateY(-10vh);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 #bdr {
@@ -96,6 +113,29 @@ header {
   font-size: 110px;
   color: #d9526b;
   text-align: center;
+}
+
+.headline:hover {
+  animation-name: Wacky;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Wacky {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    color: rgb(243, 238, 167);
+    transform: scaleX(1.2);
+  }
+  100% {
+    color: #d9526b;
+    transform: scaleX(1);
+  }
 }
 
 p {
